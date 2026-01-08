@@ -40,68 +40,69 @@ fi
 
 # Flatpak apps
 
-if ! command -v com.github.tchx84.Flatseal >/dev/null 2>&1
+
+if ! flatpak list --app | grep -q "com.github.tchx84.Flatseal"; then
 then
     flatpak install flathub com.github.tchx84.Flatseal -y
 fi
 
-if ! command -v io.github.yuki_iptv.yuki-iptv >/dev/null 2>&1
+if ! flatpak list --app | grep -q "io.github.yuki_iptv.yuki-iptv"; then
 then
     flatpak install https://dl.flathub.org/repo/appstream/io.github.yuki\_iptv.yuki-iptv.flatpakref -y
 fi
 
-if ! command -v net.cozic.joplin_desktop >/dev/null 2>&1
+if ! flatpak list --app | grep -q "net.cozic.joplin_desktop"; then
 then
     flatpak install flathub net.cozic.joplin_desktop -y
 fi
 
-if ! command -v com.visualstudio.code >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.visualstudio.code"; then
 then
     flatpak install flathub com.visualstudio.code -y
 fi
 
 #flatpak install flathub com.sublimemerge.App -y
-if ! command -v com.github.Murmele.Gittyup >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.github.Murmele.Gittyup"; then
 then
     flatpak install flathub com.github.Murmele.Gittyup -y
 fi
 
-if ! command -v eu.betterbird.Betterbird >/dev/null 2>&1
+if ! flatpak list --app | grep -q "eu.betterbird.Betterbird"; then
 then
     flatpak install flathub eu.betterbird.Betterbird -y
 fi
 
-if ! command -v com.bitwarden.desktop >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.bitwarden.desktop"; then
 then
     flatpak install flathub com.bitwarden.desktop -y
 fi
 
-if ! command -v com.slack.Slack >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.slack.Slack"; then
 then
     flatpak install flathub com.slack.Slack -y
 fi
 
-if ! command -v org.kde.krdc >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.kde.krdc"; then
 then
     flatpak install flathub org.kde.krdc -y
 fi
 
-if ! command -v org.gnome.DejaDup >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.gnome.DejaDup"; then
 then
     flatpak install flathub org.gnome.DejaDup -y
 fi
 
-if ! command -v com.github.jeromerobert.pdfarranger >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.github.jeromerobert.pdfarranger"; then
 then
     flatpak install flathub com.github.jeromerobert.pdfarranger -y
 fi
 
-if ! command -v org.videolan.VLC >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.videolan.VLC"; then
 then
     flatpak install flathub org.videolan.VLC -y
 fi
 
-if ! command -v com.synology.SynologyDrive >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.synology.SynologyDrive"; then
 then
     flatpak install flathub com.synology.SynologyDrive -y
 fi
@@ -111,32 +112,32 @@ fi
 
 # Flatpak extras
 
-if ! command -v com.ultimaker.cura >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.ultimaker.cura"; then
 then
     flatpak install flathub com.ultimaker.cura -y
 fi
 
-if ! command -v com.transmissionbt.Transmission >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.transmissionbt.Transmission"; then
 then
     flatpak install flathub com.transmissionbt.Transmission -y
 fi
 
-if ! command -v org.telegram.desktop >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.telegram.desktop"; then
 then
     flatpak install flathub org.telegram.desktop -y
 fi
 
-if ! command -v org.inkscape.Inkscape >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.inkscape.Inkscape"; then
 then
     flatpak install flathub org.inkscape.Inkscape -y
 fi
 
-if ! command -v org.audacityteam.Audacity >/dev/null 2>&1
+if ! flatpak list --app | grep -q "org.audacityteam.Audacity"; then
 then
     flatpak install flathub org.audacityteam.Audacity -y
 fi
 
-if ! command -v com.obsproject.Studio >/dev/null 2>&1
+if ! flatpak list --app | grep -q "com.obsproject.Studio"; then
 then
     flatpak install flathub com.obsproject.Studio -y
 fi
