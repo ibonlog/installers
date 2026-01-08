@@ -5,8 +5,7 @@ sudo pacman -Syu --noconfirm
 
 # Apps
 
-
-    curl -fsS https://dl.brave.com/install.sh | sh
+curl -fsS https://dl.brave.com/install.sh | sh
 
 if ! command -v virtualbox >/dev/null 2>&1
 then
@@ -85,11 +84,6 @@ fi
 if ! command -v org.kde.krdc >/dev/null 2>&1
 then
     flatpak install flathub org.kde.krdc -y
-fi
-
-if ! command -v org.mozilla.firefox >/dev/null 2>&1
-then
-    flatpak install flathub org.mozilla.firefox -y
 fi
 
 if ! command -v org.gnome.DejaDup >/dev/null 2>&1
