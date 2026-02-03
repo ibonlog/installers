@@ -117,6 +117,11 @@ then
     flatpak install flathub com.ultimaker.cura -y
 fi
 
+if ! flatpak list --app | grep -q "com.rtosta.zapzap";
+then
+    flatpak install flathub com.rtosta.zapzap -y
+fi
+
 if ! flatpak list --app | grep -q "com.transmissionbt.Transmission";
 then
     flatpak install flathub com.transmissionbt.Transmission -y
